@@ -1,0 +1,4 @@
+# Ignore environment files and Python cache in Docker build
+.env
+__pycache__/
+*.pyc
