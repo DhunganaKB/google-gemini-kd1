@@ -49,4 +49,4 @@ jobs:
             --platform managed \
             --region ${{ vars.GOOGLE_CLOUD_LOCATION }} \
             --allow-unauthenticated \
-            --set-env-vars=GOOGLE_CLOUD_PROJECT=${{ vars.GOOGLE_CLOUD_PROJECT }},GOOGLE_CLOUD_LOCATION=${{ vars.GOOGLE_CLOUD_LOCATION }},SYSTEM_PROMPT="${{ vars.SYSTEM_PROMPT }}", CACHE_TTL_SECONDS=${{ vars.CACHE_TTL_SECONDS }}, MAX_HISTORY_LENGTH=${{ vars.MAX_HISTORY_LENGTH }}
+            --set-env-vars=GOOGLE_CLOUD_PROJECT=${{ vars.GOOGLE_CLOUD_PROJECT }},GOOGLE_CLOUD_LOCATION=${{ vars.GOOGLE_CLOUD_LOCATION }},SYSTEM_PROMPT="${{ vars.SYSTEM_PROMPT }}",CACHE_TTL_SECONDS=${{ vars.CACHE_TTL_SECONDS }},MAX_HISTORY_LENGTH=${{ vars.MAX_HISTORY_LENGTH }}
