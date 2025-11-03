@@ -9,6 +9,7 @@ from constants import schema
 # Load environment variables
 load_dotenv()
 
+
 PROJECT = os.getenv("GOOGLE_CLOUD_PROJECT")
 LOCATION = os.getenv("GOOGLE_CLOUD_LOCATION")
 SYSTEM_PROMPT = os.getenv("SYSTEM_PROMPT", "")
