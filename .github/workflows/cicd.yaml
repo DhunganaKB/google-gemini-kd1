@@ -18,6 +18,7 @@ env:
 jobs:
   dockerize-and-deploy:
     runs-on: ubuntu-latest
+    environment: GOOGLE_CLOUD_PROJECT
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
