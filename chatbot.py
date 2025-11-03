@@ -33,7 +33,6 @@ class SQLAnswer(BaseModel):
     sql: str = Field(description="A valid BigQuery SQL query. No backticks or code fences.")
     reason: str = Field(description="Brief explanation of how the query answers the question.")
 
-
 if SYSTEM_PROMPT:
     system_cache = client.caches.create(
     model=MODEL_NAME,
