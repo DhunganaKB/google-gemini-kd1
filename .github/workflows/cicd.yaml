@@ -10,10 +10,11 @@ on:
 
 env:
   SERVICE_NAME: custom-fastapi-service
+  PROJECT_ID: long-arcadia-475313-s8
   # We won’t hard-code PROJECT_ID here; instead we reference the variable
   # IMAGE base URL can be built dynamically using PROJECT_ID variable
-  DOCKER_IMAGE_URL: us-central1-docker.pkg.dev/${{ vars.GOOGLE_CLOUD_PROJECT }}/custom-fastapi/custom-fastapi
-
+  DOCKER_IMAGE_URL: us-central1-docker.pkg.dev/${{ env.PROJECT_ID }}/custom-fastapi/custom-fastapi
+  
 jobs:
   dockerize-and-deploy:
     runs-on: ubuntu-latest
